@@ -1,0 +1,19 @@
+current directory: /Users/yokoymatetsu/ibusan/rails_template/vendor/bundle/ruby/3.2.0/gems/racc-1.8.1/ext/racc/cparse
+/Users/yokoymatetsu/.rbenv/versions/3.2.2/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /Users/yokoymatetsu/ibusan/rails_template/vendor/bundle/ruby/3.2.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20250209-84044-eyupsy sitelibdir\=./.gem.20250209-84044-eyupsy clean
+
+current directory: /Users/yokoymatetsu/ibusan/rails_template/vendor/bundle/ruby/3.2.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20250209-84044-eyupsy sitelibdir\=./.gem.20250209-84044-eyupsy
+compiling cparse.c
+linking shared-object racc/cparse.bundle
+ld: warning: ignoring duplicate libraries: '-lruby.3.2'
+
+current directory: /Users/yokoymatetsu/ibusan/rails_template/vendor/bundle/ruby/3.2.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20250209-84044-eyupsy sitelibdir\=./.gem.20250209-84044-eyupsy install
+/usr/bin/install -c -m 0755 cparse.bundle ./.gem.20250209-84044-eyupsy/racc
+
+current directory: /Users/yokoymatetsu/ibusan/rails_template/vendor/bundle/ruby/3.2.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20250209-84044-eyupsy sitelibdir\=./.gem.20250209-84044-eyupsy clean
