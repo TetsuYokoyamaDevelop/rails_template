@@ -86,3 +86,10 @@ config/credentials.yml.enc
 .vscode/
 *.iml
 .history/
+
+# Ignore vendor directory (external dependencies)
+vendor/
+vendor/bundle/
+vendor/cache/
+vendor/gems/
+vendor/ruby/
