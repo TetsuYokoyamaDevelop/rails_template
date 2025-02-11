@@ -2,13 +2,13 @@ default: &default
   adapter: mysql2
   encoding: utf8mb4
   pool: 5
-  username: root  # MySQL のユーザー名
-  password: ""    # 必要に応じて設定
-  host: localhost
 
 development:
   <<: *default
   database: rails_template_development
+  username: root
+  password: ""
+  host: localhost
 
 test:
   <<: *default
@@ -20,9 +20,18 @@ test:
   pool: 5
   timeout: 5000
 
+staging:
+  <<: *default
+  database: <%= ENV['STAGING_DATABASE_NAME'] %>
+  username: <%= ENV['STAGING_DATABASE_USERNAME'] %>
+  password: <%= ENV['STAGING_DATABASE_PASSWORD'] %>
+  host: <%= ENV['STAGING_DATABASE_HOST'] %>
+  port: <%= ENV['STAGING_DATABASE_PORT'] %>
 
 production:
   <<: *default
-  database: rails_template_production
-  username: myapp
-  password: <%= ENV['DATABASE_PASSWORD'] %>
+  database: <%= ENV['PRODUCTION_DATABASE_NAME'] %>
+  username: <%= ENV['PRODUCTION_DATABASE_USERNAME'] %>
+  password: <%= ENV['PRODUCTION_DATABASE_PASSWORD'] %>
+  host: <%= ENV['PRODUCTION_DATABASE_HOST'] %>
+  port: <%= ENV['PRODUCTION_DATABASE_PORT'] %>
